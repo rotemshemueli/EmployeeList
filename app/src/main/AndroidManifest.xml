@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.rosol.employeelist">
+
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_work"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_work"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".AddTaskActivity"
+            android:label="Add a new employee"
+            android:parentActivityName=".MainActivity"/>
+
+        <activity android:name=".TaskAdapter"
+            android:label="@string/app_name">
+           <intent-filter>
+            <action android:name="android.intent.action.DIAL" />
+            <category android:name="android.intent.category.DEFAULT" />
+           </intent-filter>
+        </activity>
+
+        <activity android:name="BirthdayCard"
+            android:label="Happy Birthday"
+            android:parentActivityName=".MainActivity"/>
+    </application>
+
+</manifest>

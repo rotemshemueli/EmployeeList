@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/image_cake"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/relative"
+/>
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+    <TextView
+        android:id="@+id/birthday_card_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_card"
+        android:gravity="center_horizontal"
+        style="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="italic"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp"/>
+
+        <TextView
+            android:id="@+id/name_birtday"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/birthday_card_title"
+            android:text="שם"
+            android:textColor="@color/colorPrimary"
+            android:textSize="28sp"
+            android:textStyle="italic" />
+
+    </RelativeLayout>
+</RelativeLayout>

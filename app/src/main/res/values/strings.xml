@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">List of Employees</string>
+    <string name="description1">Welcome</string>
+    <string name="description2">Get started by adding an employee</string>
+    <string name="title">Birthday notification</string>
+    <string name="text_card">today</string>
+</resources>
